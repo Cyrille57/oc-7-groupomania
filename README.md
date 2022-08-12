@@ -1,5 +1,5 @@
 # 📢 Projet OpenClassrooms / P7 Groupomania
-
+<p>01.07.2021</p>
 <p> 
   Dans le cadre de ma formation développeur web avec OpenClassrooms, différents projets sont à realiser.
 </p>
