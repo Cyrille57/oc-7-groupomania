@@ -1,0 +1,332 @@
+// ***************************************
+// ************ postWall.scss ************
+// ***************************************
+
+
+// ***************************************
+// Card envoie Post:
+
+
+// post*frameCard base:
+.post-frameCard{
+
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+  &__input{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+  }
+
+  // Media Queries: ***************************************
+  @include mobile-landscape-tablet { // 480 - 768
+
+  }
+  @include tablet-landscape {       // 768 - 1024
+
+  }
+  @include pc {                     // 1024 - 1600
+
+  }
+  @include pc-xl {                  // > 1600
+
+  }
+}
+
+// ***************************************
+// Card affiche les Post et comments:
+
+.postAndComment{
+  height: auto;
+  margin-bottom: 0%;
+  display: flex;
+  flex-direction: column;
+
+  //border: 3px solid red;
+
+}
+
+// ***************************************
+// Post:
+// card display post contenu dans postAndComment:
+.display-frameCard{
+  //width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // card post:
+  &__read-post{
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+
+    margin-top: 10%;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    //border: 1px solid rgba(255, 255, 255, 0.5);
+    //border: 2px solid black;
+    border-radius: 3%  !important;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+   // pseudo de l'user qui a posté:
+   &__username > h2{
+    width: 50%;
+    margin-left: 3%;
+
+    font-size: 22px;
+    font-weight: bold;
+    //color: black;
+    //border: 1px solid red;
+  }
+
+  // card dans la card qui affiche le post:
+  &__displayPost{
+
+    width: 97%;
+    height: auto;
+    max-height: 450px;
+    min-height: 150px;
+
+    margin: 3%;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    //border: 1px solid rgba(255, 255, 255, 0.5);
+    //border: 2px solid yellowgreen;
+    border-radius: 3% 3% 3% 3% !important;
+    border-right: none;
+
+    >p{
+      width: 90%;
+      height: auto;
+
+      margin: 3%;
+
+      overflow: hidden;
+      word-wrap: break-word;
+      text-align: left;
+
+      //border:1px solid black;
+      //padding: 12px;
+      //border: 1px solid black;
+    }
+
+  }
+
+  &__icon-Modify-Delete-Post{
+    width: 17px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    //border:1px solid red;
+
+    >i {
+      cursor: pointer;
+    }
+
+  }
+
+  &__infoPost{
+    width: 100%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+    //border:1px solid black;
+
+    >p{
+      margin-bottom: 0%;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+  }
+
+  &__option{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 3%;
+
+    //border: 1px solid orchid;
+
+
+
+    > .button {
+      height: 30px;
+      width: 110px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    > button{
+      height: 30px;
+      width: 110px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+  }
+
+  &__date{
+    width: 50%;
+    max-height: 30px;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+
+    >p{
+      font-size: 14px;
+      font-style: italic;
+      margin-bottom: 0%;
+    }
+  }
+
+  // ***************************************
+  // Comments:
+  &__readComment{
+
+    width: 97%;
+    height: auto;
+    max-height: 450px;
+    min-height: 150px;
+
+    margin-right: 3%;
+    margin-bottom: 3%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    //border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid yellowgreen;
+    border-radius: 3% 3% 3% 3% !important;
+    border-left: none;
+
+    >p{
+      width: 90%;
+      height: auto;
+
+      margin: 3%;
+
+      overflow: hidden;
+      word-wrap: break-word;
+      text-align: right;
+
+      //border:1px solid black;
+    }
+
+  }
+
+  &__icon-Modify-Delete-Comment{
+    width: 100%;
+    height: 20px;
+
+    margin-bottom: 3%;
+
+    display: flex;
+    justify-content: space-around;
+
+    border:1px solid red;
+
+    >i {
+      cursor: pointer;
+    }
+  }
+
+  &__infoComment{
+    width: 100%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+    border:1px solid black;
+
+    > h2{
+      margin-bottom: 0%;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    >p{
+      margin-bottom: 0%;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+  }
+
+}
+.postForm{
+  display: flex;
+  align-items: center;
+}
+.frameTextereaModifyPost{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  //border:5px solid red;
+}
+
+.button {
+  height: 30px;
+  width: 150px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+

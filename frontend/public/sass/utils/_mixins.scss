@@ -1,0 +1,47 @@
+// ***************************************
+// ************* MIXINS ******************
+// ***************************************
+
+
+///////////////////////////////////////
+//////////// MEDIA QUERIES ////////////
+///////////////////////////////////////
+
+
+// Pour ecrans entre 480px et 768px (Portable mode paysage et tablette)
+@mixin mobile-landscape-tablet {
+    @media only screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, mobile-landscape-tablet)) {
+        @content;
+    }
+}
+
+// Pour écrans entre 768px et 1024px (Tablette mode paysage)
+@mixin tablet-landscape {
+    @media only screen and (min-width: map-get($breakpoints, mobile-landscape-tablet)) and (max-width: map-get($breakpoints, tablet-landscape)) {
+        @content;
+    }
+}
+
+// Pour écrans entre 1024px et 1600px (Ecrans pc de petite et moyenne taille)
+@mixin pc {
+    @media only screen and (min-width: map-get($breakpoints, tablet-landscape)) and (max-width: map-get($breakpoints, pc)) {
+        @content;
+    }
+}
+
+// Pour écrans de 1600px et plus (Ecrans pc de grande taille)
+@mixin pc-xl {
+    @media only screen and (min-width: map-get($breakpoints, pc-xl)) {
+        @content;
+    }
+}
+
+///////////////////////////////////////
+//////////////// WIDTH ////////////////
+///////////////////////////////////////
+
+// Width:
+@mixin max-min-width($max-width) {
+    max-width: $max-width;
+    min-width: 100%;
+}

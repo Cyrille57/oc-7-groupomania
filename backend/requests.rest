@@ -1,0 +1,38 @@
+
+
+
+###
+
+# Création de post:
+post http://localhost:3000/api/posts
+Content-Type: application/x-www-form-urlencoded
+{
+    "content": "Mon commentaires sur groupomania !"
+
+}
+
+###
+
+# Test récupération de tout les posts:
+get http://localhost:3000/api/posts
+Content-Type: application/x-www-form-urlencoded
+
+###
+
+
+# get http://localhost:3000/posts
+# Test la route de tout les posts
+
+# post http://localhost:3000/api/auth/signup
+# Test la route inscription
+
+#Content-Type: application/x-www-form-urlencoded
+
+#{
+    #"username": "cyril",
+    #"email" : "cyril57070@outlook.fr",
+    #"password": "Aa1!1234"
+#}
+
+
+

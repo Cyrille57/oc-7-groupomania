@@ -1,0 +1,41 @@
+// ***************************************
+// **************** Main *****************
+// ***************************************
+
+
+// utils:
+@import "./utils/variable_overrides";
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/_maps";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+// vendors:
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// base:
+@import "./base/fonts.scss";
+
+// components:
+@import "./components/buttons.scss";
+@import "./components/card-post.scss";
+//@import "./components;
+
+// layout:
+@import "./layout/general.scss";
+@import "./layout/navbar.scss";
+//@import "./layout";
+
+// pages:
+@import "./pages/connexion.scss";
+@import "./pages/inscription.scss";
+@import "./pages/admin.scss";
+@import "./pages/postWall.scss";
+@import "./pages/viewComment.scss";
+@import "./pages/editComment.scss";
+@import "./pages/vueProfil.scss";
+@import "./pages/editProfil.scss";
+
+// themes:
+
+

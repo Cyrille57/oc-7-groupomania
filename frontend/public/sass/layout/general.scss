@@ -1,0 +1,127 @@
+// ***************************************
+// *************** General ***************
+// ***************************************
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    background-size: 100% auto;
+  }
+
+html {
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 12%;
+}
+
+h1, h2, p, label, button{
+    color: white;
+}
+
+textarea{
+    resize: none;
+}
+
+
+
+
+// ***************************************
+// Body index:
+
+
+// ***************************************
+// Body inscription:
+
+// ***************************************
+// Body inscription:
+
+.inscription-body{
+    width: 100%;
+    height: 100%;
+    background-color: #2152ab;
+}
+
+// ***************************************
+// Body connexion:
+.index-body{
+    width: 100%;
+    height: 100%;
+    background-color: #2152ab;
+}
+
+// ***************************************
+// Body postWall:
+.postWall-body{
+    width: 100%;
+    height: 100%;
+    background-color: #2152ab;
+}
+
+// ***************************************
+// Body admin:
+.admin-body{
+    width: 100%;
+    height: 100%;
+    background-color: #2152ab;
+}
+
+// ***************************************
+// Body editComment:
+.editComment-body{
+    width: 100%;
+    height: 100%;
+    background-color: #2152ab;
+}
+
+// ***************************************
+// Body viewComment:
+.viewComment-body{
+    width: 100%;
+    height: 100%;
+    background-color: #2152ab;
+}
+
+// ***************************************
+// Body vueProfil
+.vueProfil-body{
+    width: 100%;
+    height: 100%;
+    background-color: #2152ab;
+}
+
+// ***************************************
+// Body vueProfil
+.editProfil-body{
+    width: 100%;
+    height: 100%;
+    background-color: #2152ab;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-12{
+    // Media Queries: ***************************************
+  @include mobile-landscape-tablet { // 480 - 768
+
+  }
+  @include tablet-landscape {       // 768 - 1024
+    width: 70%;
+  }
+  @include pc {                     // 1024 - 1600
+    width: 50%;
+  }
+  @include pc-xl {                  // > 1600
+    width: 50%;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+  <!-- style.css -->
+  <link rel="stylesheet" href="./public/css/style.css">
+  <title>Connexion</title>
+</head>
+
+<body class="index-body">
+
+
+  <div class="container d-flex justify-content-center mt-5">
+    <img src="./Public/Images/Logo Groupomania/icon-left-font-monochrome-white.svg" width="250" alt="" srcset="">
+  </div>
+
+
+  <div class="wrapper">
+    <div class="card">
+      <!-- Formulaire: -->
+      <form id='loginForm' class="d-flex flex-column">
+
+        <!-- Titre de la card: -->
+        <div class="h3 text-center text-white">
+          Connexion
+        </div>
+        <!-- margin des 2 input: -->
+        <div class="d-flex align-items-center input-field my-3 mb-4">
+          <!-- Hauteur input email:-->
+          <span class="far fa-envelope-open p-2"></span>
+
+          <!-- Input email: -->
+          <input id="inputEmail" class="form-control" name="email" type="email" required placeholder="Email">
+        </div>
+        <!-- Password: -->
+        <div class="d-flex align-items-center input-field mb-4">
+          <!-- Margin du placeholder: -->
+          <span class="fas fa-lock p-2"></span>
+
+          <!-- Input password: -->
+          <input id="inputPassword" class="form-control" name="password" type="password" required
+            placeholder="Mot de passe" minlength="8">
+
+          <span class="btn" onclick="showPassword()">
+            <span class="fas fa-eye-slash"></span>
+          </span>
+        </div>
+
+        <div class="my-4 d-flex justify-content-center">
+          <input type="submit" value="Connexion" class="btn btn-primary ">
+        </div>
+
+      </form>
+
+      <div class="position-relative border-bottom my-3 line">
+      </div>
+
+      <div class="mb-3 mt-3 d-flex flex-column align-items-center  ess">
+        <span class="text-light-white">Pas encore de compte ?</span></br>
+        <a href="./public/html/inscription.html"> C'est par ici ;)</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Script: -->
+  <script src="./public/js/function.js"></script>
+  <script src="./public/js/connexion.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+// ***************************************
+// vueProfil.html ************************
+// ***************************************
+
+
+
+.display-frameCard__displayUser {
+
+  height: auto;
+  margin-top: 10%;
+  //border: 3px solid yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+
+  border-radius: 3% !important;
+
+  //border: 3px solid yellow;
+}
+
+.frameUsernameUser {
+
+  margin-top: 3%;
+
+  display: flex;
+  align-items: center;
+
+  //border:1px solid red;
+}
+
+.frameInfoUser {
+
+  margin: 2% 5%;
+
+  display: flex;
+  flex-direction: column;
+
+  //border:1px solid orange;
+}
+
+.frameButton {
+  width: 80%;
+  margin-bottom: 3%;
+
+  display: flex;
+  justify-content: space-around;
+
+  //border:1px solid green;
+
+  > .button {
+    height: 30px;
+      width: 110px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+}

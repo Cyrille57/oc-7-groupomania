@@ -1,0 +1,209 @@
+// ***************************************
+// admin.html ****************************
+// ***************************************
+
+/*
+Search
+#suggestions > li {
+  position: relative;
+  bottom: 40px;
+  left: 40px;
+  text-decoration: none;
+  list-style-type: none;
+  color: red;
+}
+*/
+
+// ***************************************
+// Navbar postWall:
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.modifyRowAdmin{}
+
+// ***************************************
+// Card qui apparais au clik de vue:
+.display-frameCard__cardUser {
+
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+
+  margin-top: 10%;
+
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+
+  //border: 1px solid rgba(255, 255, 255, 0.5);
+  //border: 2px solid black;
+  border-radius: 3% !important;
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.divLeftCardUser {
+  width: 45%;
+  height: auto;
+
+  margin-top: 3%;
+
+  overflow: hidden;
+
+  //border: 1px solid red;
+
+  display: flex;
+  flex-direction: column;
+
+  .divEmailUser{
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  .divInfoRole{
+    display: flex;
+    text-align: center;
+
+  }
+}
+
+.divRightCardUser {
+  width: 45%;
+  height: auto;
+
+  margin-top: 3%;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  //border: 1px solid rgb(158, 231, 21)
+
+  .divBio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.display-frameCard__cardUserUsername{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.display-frameCard__cardUserUsername>h2 {
+
+  width: 100%;
+
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+}
+
+// ***************************************
+// Card qui apparais au clik de edit:
+
+.cardEditUser {
+  margin-top: 20%;
+  //border:1px solid black;
+}
+// Formulaire:
+.form-group{
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+// Taille Label:
+.sizeLabel{
+
+  width: 80%;
+  margin-top: 10%;
+    // Media Queries: ***************************************
+    @include mobile-landscape-tablet { // 480 - 768
+
+    }
+    @include tablet-landscape {       // 768 - 1024
+      width: 50%;
+    }
+    @include pc {                     // 1024 - 1600
+      width: 50%;
+    }
+    @include pc-xl {                  // > 1600
+      width: 30%;
+    }
+
+}
+// Taille input:
+.sizeInput{
+
+  width: 80%;
+  //margin-left: 5%;
+    // Media Queries: ***************************************
+    @include mobile-landscape-tablet { // 480 - 768
+
+    }
+    @include tablet-landscape {       // 768 - 1024
+      width: 50%;
+    }
+    @include pc {                     // 1024 - 1600
+      width: 50%;
+    }
+    @include pc-xl {                  // > 1600
+      width: 30%;
+    }
+
+}
+// divRow:
+#divRow{
+  width: 100%;
+  margin: 0%;
+  height:auto;
+  display: block;
+  //border: 1px solid red;
+  //display:flex;
+}
+// Cadre checkBox:
+.divFrameCheckBox{
+  width: 100%;
+  //border: 3px solid black;
+  margin: 0% !important;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+// legend:
+legend{
+  height:auto;
+  width: 100%;
+  //border: 1px solid black;
+  display:flex;
+  justify-content: center;
+
+}
+.divFrameButton{
+  width: 30%;
+  //border: 1px solid yellowgreen;
+  display: flex;
+  justify-content: space-around;
+}
+

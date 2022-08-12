@@ -1,0 +1,17 @@
+// ***************************************
+// *************** MAPS ******************
+// ***************************************
+
+
+// ***************************************
+// ************ Media queries ************
+// ***************************************
+
+
+$breakpoints: (
+    mobile:                     $mobile,
+    mobile-landscape-tablet:    $mobile-landscape-tablet,
+    tablet-landscape:           $tablet-landscape,
+    pc:                         $pc,
+    pc-xl:                      $pc-xl
+    )
